@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello():
     """print hello world for root directory"""
     print('From inside the hello() function - updated')
-    return 'Hello World... again'
+    return 'Hello World...'
 
 
 @app.route('/echo')
