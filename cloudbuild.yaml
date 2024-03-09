@@ -9,10 +9,16 @@
 # end it with a timeout declaration
 steps:
 # https://cloud.google.com/build/docs/cloud-builders
+- name: 'python'
+  entrypoint: 'python'
+  args:
+  - '-m'
+  - pytest
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'app'
   - 'deploy'
+  
 options:
   logging: CLOUD_LOGGING_ONLY
 
