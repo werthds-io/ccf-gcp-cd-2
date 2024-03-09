@@ -11,10 +11,10 @@ def hello():
     return 'Hello World...'
 
 
-@app.route('/echo')
+@app.route('/echo/<name>')
 def echo(name):
     """echo's the contents of the name query parameter to screen"""
-    print(f"here's the query paramter: {name}")
+    print(f"heres the query paramter: {name}")
     val = {"name-name": name}
     return jsonify(val)
 
