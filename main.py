@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """print hello world for root directory"""
-    print('From inside the hello() function')
+    print('From inside the hello() function - updated')
     return 'Hello World...'
 
 
