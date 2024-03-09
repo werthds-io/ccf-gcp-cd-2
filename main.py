@@ -8,10 +8,10 @@ app = Flask(__name__)
 def hello():
     """print hello world for root directory"""
     print('From inside the hello() function - updated')
-    return 'Hello World...'
+    return 'Hello World... again'
 
 
-@app.rount('/echo')
+@app.route('/echo')
 def echo(name):
     """echo's the contents of the name query parameter to screen"""
     print(f"here's the query paramter: {name}")
