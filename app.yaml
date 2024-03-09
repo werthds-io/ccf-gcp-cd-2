@@ -1,0 +1,6 @@
+# https://cloud.google.com/appengine/docs/standard/reference/app-yaml?tab=python
+runtime: python
+
+runtime_config:
+	operating_system: "ubuntu22"
+	runtime_version: "3.12"
