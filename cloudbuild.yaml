@@ -14,8 +14,10 @@ steps:
   args:
   - '-c'
   - |
-    pip install pytest
-    pytest
+    apt-get update && apt-get install -y make
+    make install
+    make lint
+    make test
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'app'
