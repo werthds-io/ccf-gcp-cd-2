@@ -9,7 +9,7 @@
 # end it with a timeout declaration
 steps:
 # https://cloud.google.com/build/docs/cloud-builders
-- name: 'gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/cloud-builders/gcloud-slim'
   args:
   - 'app'
   - 'deploy'
